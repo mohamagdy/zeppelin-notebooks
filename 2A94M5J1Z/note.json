@@ -100,7 +100,7 @@
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:14:49.081",
+      "dateUpdated": "2017-11-30 18:15:50.295",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -170,7 +170,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:14:49.138",
+      "dateUpdated": "2017-11-30 18:15:50.425",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -249,7 +249,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:14:49.208",
+      "dateUpdated": "2017-11-30 18:15:50.513",
       "config": {
         "colWidth": 4.0,
         "results": [
