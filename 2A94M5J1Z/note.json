@@ -54,7 +54,7 @@
       "title": "Load data into table",
       "text": "",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 17:40:15.863",
+      "dateUpdated": "2017-11-30 17:40:28.231",
       "config": {
         "colWidth": 12.0,
         "title": true,
@@ -100,7 +100,7 @@
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 17:39:07.352",
+      "dateUpdated": "2017-11-30 17:45:57.191",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -170,7 +170,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 17:39:07.452",
+      "dateUpdated": "2017-11-30 17:45:57.289",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -249,7 +249,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 17:39:07.557",
+      "dateUpdated": "2017-11-30 17:45:57.391",
       "config": {
         "colWidth": 4.0,
         "results": [
