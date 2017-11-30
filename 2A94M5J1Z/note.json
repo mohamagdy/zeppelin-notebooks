@@ -51,6 +51,34 @@
       "progressUpdateIntervalMs": 500
     },
     {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512062250052_842860044",
+      "id": "20171130-181730_1530911415",
+      "dateCreated": "2017-11-30 18:17:30.052",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512062249906_1662672833",
+      "id": "20171130-181729_1062447851",
+      "dateCreated": "2017-11-30 18:17:29.906",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "title": "Load data into table",
       "text": "",
       "user": "anonymous",
@@ -100,7 +128,7 @@
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:16:51.359",
+      "dateUpdated": "2017-11-30 18:17:34.272",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -170,7 +198,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:16:51.464",
+      "dateUpdated": "2017-11-30 18:17:34.360",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -249,7 +277,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 18:16:51.591",
+      "dateUpdated": "2017-11-30 18:17:34.445",
       "config": {
         "colWidth": 4.0,
         "results": [
