@@ -1,6 +1,20 @@
 {
   "paragraphs": [
     {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512139740856_272730282",
+      "id": "20171201-154900_1407949675",
+      "dateCreated": "2017-12-01 15:49:00.857",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
       "user": "anonymous",
       "dateUpdated": "2016-12-17 15:32:15.000",
@@ -128,7 +142,7 @@
     {
       "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-01 13:50:13.179",
+      "dateUpdated": "2017-12-01 15:48:56.095",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -198,7 +212,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-01 13:50:13.318",
+      "dateUpdated": "2017-12-01 15:48:56.188",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -277,7 +291,7 @@
     {
       "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-01 13:50:13.424",
+      "dateUpdated": "2017-12-01 15:48:56.312",
       "config": {
         "colWidth": 4.0,
         "results": [
