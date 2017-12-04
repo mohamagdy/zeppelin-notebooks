@@ -1,0 +1,36 @@
+{
+  "paragraphs": [
+    {
+      "text": "SELECT * FROM there;",
+      "user": "anonymous",
+      "dateUpdated": "2017-12-04 16:09:30.839",
+      "config": {
+        "colWidth": 12.0,
+        "fontSize": 9.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512400164018_1621915891",
+      "id": "20171204-160924_756072795",
+      "dateCreated": "2017-12-04 16:09:24.018",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Second notebook",
+  "id": "2CZD3BWH4",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {
+    "2B61KFHHB:shared_process": [],
+    "2B5UBR2T1:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
