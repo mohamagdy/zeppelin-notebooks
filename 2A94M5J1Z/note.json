@@ -140,9 +140,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:03:42.163",
+      "dateUpdated": "2017-12-04 14:04:59.241",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -210,9 +210,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:03:42.268",
+      "dateUpdated": "2017-12-04 14:04:59.395",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -289,9 +289,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:03:42.415",
+      "dateUpdated": "2017-12-04 14:04:59.682",
       "config": {
         "colWidth": 4.0,
         "results": [
