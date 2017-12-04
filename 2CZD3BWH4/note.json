@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "SELECT * FROM there;",
+      "text": "SELECT * FROM ther2e;",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 16:09:30.839",
+      "dateUpdated": "2017-12-04 17:12:21.462",
       "config": {
         "colWidth": 12.0,
         "fontSize": 9.0,
@@ -27,10 +27,7 @@
   "id": "2CZD3BWH4",
   "noteParams": {},
   "noteForms": {},
-  "angularObjects": {
-    "2B61KFHHB:shared_process": [],
-    "2B5UBR2T1:shared_process": []
-  },
+  "angularObjects": {},
   "config": {},
   "info": {}
 }
