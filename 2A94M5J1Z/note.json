@@ -1,20 +1,6 @@
 {
   "paragraphs": [
     {
-      "user": "anonymous",
-      "config": {},
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "jobName": "paragraph_1512139740856_272730282",
-      "id": "20171201-154900_1407949675",
-      "dateCreated": "2017-12-01 15:49:00.857",
-      "status": "READY",
-      "progressUpdateIntervalMs": 500
-    },
-    {
       "text": "%md\n## Welcome to Zeppelin.\n##### This is a live tutorial, you can run the code yourself. (Shift-Enter to Run)",
       "user": "anonymous",
       "dateUpdated": "2016-12-17 15:32:15.000",
@@ -65,38 +51,10 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "user": "anonymous",
-      "config": {},
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "jobName": "paragraph_1512062250052_842860044",
-      "id": "20171130-181730_1530911415",
-      "dateCreated": "2017-11-30 18:17:30.052",
-      "status": "READY",
-      "progressUpdateIntervalMs": 500
-    },
-    {
-      "user": "anonymous",
-      "config": {},
-      "settings": {
-        "params": {},
-        "forms": {}
-      },
-      "apps": [],
-      "jobName": "paragraph_1512062249906_1662672833",
-      "id": "20171130-181729_1062447851",
-      "dateCreated": "2017-11-30 18:17:29.906",
-      "status": "READY",
-      "progressUpdateIntervalMs": 500
-    },
-    {
       "title": "Load data into table",
-      "text": "",
+      "text": "import org.apache.commons.io.IOUtils\nimport java.net.URL\nimport java.nio.charset.Charset\n\n// Zeppelin creates and injects sc (SparkContext) and sqlContext (HiveContext or SqlContext)\n// So you don\u0027t need create them manually\n\n// load bank data\nval bankText \u003d sc.parallelize(\n    IOUtils.toString(\n        new URL(\"https://s3.amazonaws.com/apache-zeppelin/tutorial/bank/bank.csv\"),\n        Charset.forName(\"utf8\")).split(\"\\n\"))\n\ncase class Bank(age: Integer, job: String, marital: String, education: String, balance: Integer)\n\nval bank \u003d bankText.map(s \u003d\u003e s.split(\";\")).filter(s \u003d\u003e s(0) !\u003d \"\\\"age\\\"\").map(\n    s \u003d\u003e Bank(s(0).toInt, \n            s(1).replaceAll(\"\\\"\", \"\"),\n            s(2).replaceAll(\"\\\"\", \"\"),\n            s(3).replaceAll(\"\\\"\", \"\"),\n            s(5).replaceAll(\"\\\"\", \"\").toInt\n        )\n).toDF()\nbank.registerTempTable(\"bank\")",
       "user": "anonymous",
-      "dateUpdated": "2017-11-30 17:40:28.231",
+      "dateUpdated": "2017-12-07 12:17:42.394",
       "config": {
         "colWidth": 12.0,
         "title": true,
@@ -140,9 +98,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value\nfrom bank \nwhere age \u003c 30 \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:04:59.241",
+      "dateUpdated": "2017-12-07 12:17:37.499",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -210,9 +168,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere age \u003c ${maxAge\u003d30} \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:04:59.395",
+      "dateUpdated": "2017-12-07 12:17:37.640",
       "config": {
         "colWidth": 4.0,
         "results": [
@@ -289,9 +247,9 @@
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "%sql \nSELECT age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
+      "text": "%sql \nselect age, count(1) value \nfrom bank \nwhere marital\u003d\"${marital\u003dsingle,single|divorced|married}\" \ngroup by age \norder by age",
       "user": "anonymous",
-      "dateUpdated": "2017-12-04 14:04:59.682",
+      "dateUpdated": "2017-12-07 12:17:37.802",
       "config": {
         "colWidth": 4.0,
         "results": [
